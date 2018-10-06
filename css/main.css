@@ -1,0 +1,40 @@
+/* palette*/
+html{
+	--background: #FFFFFF;
+	--text: #000000;
+	--green: #33a71d;
+	--color2: #222;
+}
+
+body {
+	margin: 10%;
+}
+
+header {
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1 {
+	margin-bottom: 1em;
+}
+
+form {
+	align-content: center;
+	text-align: center;
+}
+
+fieldset {
+	margin-bottom: 3em;
+	width: 100%;
+}
+
+.btn {
+	background: var(--green);
+	color: var(--background);
+}
+
+.card {
+	min-width: 120px;
+	max-width: 250px;
+}
