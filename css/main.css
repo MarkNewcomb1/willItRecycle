@@ -1,0 +1,63 @@
+/* palette*/
+html {
+	--background: #FFFFFF;
+	--text: #000000;
+	--green: #33a71d;
+	--grey: #ddd;
+}
+
+body {
+	margin: 10%;
+}
+
+header {
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1 {
+	margin-bottom: 1em;
+}
+
+h2 {
+	margin-bottom: .5em;
+	text-align: center;
+}
+
+form {
+	font-size: 16pt;
+	align-content: center;
+	text-align: center;
+}
+
+fieldset {
+	margin-bottom: 3em;
+	width: 100%;
+}
+
+.btn {
+	background: var(--green);
+	color: var(--background);
+}
+
+main {
+	margin: 0 auto;
+}
+
+article {
+	border: 1px solid var(--grey);
+	border-radius: 10px;
+	text-align: justify;
+	width: 90%;
+	padding: 20px;
+	min-width: 300px;
+	min-height: 150px;
+}
+
+.info {
+	padding: 0 10px 0 0;
+}
+
+article img {
+	float: right;
+}
