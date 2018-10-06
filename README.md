@@ -14,7 +14,7 @@ Accept search term or common querys and output if an item is recyclable and if t
 
 
 ## Setup/Installation Requirements
-
+ _https://docs.google.com/presentation/d/1GH4IDNEQz0RaRri84Q0vDaDR-CrxSVDOnIYPO3SBtQ0/edit_
 
 ## Support and contact details
 

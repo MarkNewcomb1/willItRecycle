@@ -7,7 +7,8 @@ html {
 }
 
 body {
-	margin: 10%;
+	margin: 5%;
+	font-family: 'Muli', sans-serif;
 }
 
 header {
@@ -25,6 +26,8 @@ h2 {
 }
 
 form {
+	width: 90%;
+	display: inline;
 	font-size: 16pt;
 	align-content: center;
 	text-align: center;
@@ -33,6 +36,10 @@ form {
 fieldset {
 	margin-bottom: 3em;
 	width: 100%;
+}
+
+input {
+	max-width: 150px;
 }
 
 .btn {
@@ -45,6 +52,7 @@ main {
 }
 
 article {
+	margin: 0 auto;
 	border: 1px solid var(--grey);
 	border-radius: 10px;
 	text-align: justify;
@@ -59,5 +67,8 @@ article {
 }
 
 article img {
+	width: 100px;
+	max-width: 100%;
+	height: 100px;
 	float: right;
 }
