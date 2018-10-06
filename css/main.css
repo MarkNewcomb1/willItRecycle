@@ -1,9 +1,9 @@
 /* palette*/
-html{
+html {
 	--background: #FFFFFF;
 	--text: #000000;
 	--green: #33a71d;
-	--color2: #222;
+	--grey: #ddd;
 }
 
 body {
@@ -19,7 +19,13 @@ h1 {
 	margin-bottom: 1em;
 }
 
+h2 {
+	margin-bottom: .5em;
+	text-align: center;
+}
+
 form {
+	font-size: 16pt;
 	align-content: center;
 	text-align: center;
 }
@@ -34,7 +40,24 @@ fieldset {
 	color: var(--background);
 }
 
-.card {
-	min-width: 120px;
-	max-width: 250px;
+main {
+	margin: 0 auto;
+}
+
+article {
+	border: 1px solid var(--grey);
+	border-radius: 10px;
+	text-align: justify;
+	width: 90%;
+	padding: 20px;
+	min-width: 300px;
+	min-height: 150px;
+}
+
+.info {
+	padding: 0 10px 0 0;
+}
+
+article img {
+	float: right;
 }
