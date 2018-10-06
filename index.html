@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit="no">
 
-	<title>Will It Recycle?</title>
+	<title>OfficeCycle</title>
 
 	<!-- <link rel="icon" href="images/favicon.png"> -->
 	<link rel="stylesheet" href="#fonts"> 
@@ -18,20 +18,28 @@
 
 
 	<header>
-		<!-- <h1>OfficeCycle</h1><img src="images/logo.jpg"> -->
+		<h1>OfficeCycle<img class="mx-2 pb-4" src="images/logo.png"></h1>
 		<form id="searchform" class="form-inline mx-auto">
+                                                     
+			<fieldset id="canirecycle">
+          <label>Can I recycle
+          <input type="text" class="form-control m-2" id="searchbox" placeholder="cardboard">
+          <button id="search" class="btn btn-sm m-1" type="submit"><strong>?</strong></button>
+          </label>
+                                                                  
 			<fieldset>
           <label>Can I recycle </label>
           <input type="text" class="form-control" id="searchbox" placeholder="cardboard">
 
           <button id="search" class="btn btn-sm m-1">Search</button>
 
+
 			</fieldset>
 			<fieldset>
         <p>Commonly searched for:</p>
-					<button class="btn btn-sm">cardboard</button>
-					<button class="btn btn-sm">paper towels</button>
-					<button class="btn btn-sm">batteries</button>
+					<button id="cardboard" class="btn btn-sm">cardboard</button>
+					<button id="papertowels" class="btn btn-sm">paper towels</button>
+					<button id="batteries" class="btn btn-sm">batteries</button>
 			</fieldset>
     </form>
 	</header>

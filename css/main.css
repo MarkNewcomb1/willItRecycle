@@ -25,6 +25,7 @@ h2 {
 }
 
 form {
+	display: inline;
 	font-size: 16pt;
 	align-content: center;
 	text-align: center;
