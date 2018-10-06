@@ -5,9 +5,15 @@ const card = document.querySelector("article");
 const itemName = document.getElementById("itemName");
 const itemDescription = document.getElementById("itemDescription");
 const img = document.getElementById("itemImage");
-const yesOrNo = document.getElementById("yesOrNo");
+const main = document.querySelector("main");
 
+function createNode(element) {
+    return document.createElement(element);
+}
 
+function append(parent, element) {
+    return parent.appendChild(element);
+}
 
 console.log("hey mon");
 console.log("itemSought (outside function): ", itemSought);
@@ -28,22 +34,24 @@ function onSearch(event) {
             console.log("here's the response.json: ", json);
             const recyclable = json;
             console.log("recyclable.results is: ", recyclable.results);
-            recyclable.results.map((item) => { 
-                let li = createNode('li'),
+            return recyclable.results.map((item) => { 
+                let article = createNode('article'),
                     img = createNode('img'),
-                    itemName = createNode('p'),
-                    p = createNode('p'),
+                    div = createNode('div'),
+                    itemName = createNode('h3'),
                     description = createNode('p');
 
                 img.src = item.Image;
-                itemName.innerHTML = item.Item;
-                p.innerHTML = item.Y/M/N;
+                div.classList.add('info');
+                itemName.innerHTML = item.item;
                 description.innerHTML = item.Description;
-                append(li, img); 
-                append(li, itemName);
-                append(li, p);
-                append(li, description);
-                append( , li);
+                append(article, img); 
+                append(article, div);
+                append(div, itemName);
+                append(div, description);
+                append(main, article);
+
+                return article;
                 
             })
             
