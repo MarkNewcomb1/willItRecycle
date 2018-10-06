@@ -15,52 +15,30 @@
 
 <body>
 	<header>
-		<h1>Will It Recycle?</h1>
+		<!-- <h1>OfficeCycle</h1><img src="images/logo.jpg"> -->
 		<form id="searchform" class="form-inline mx-auto">
 			<fieldset>
+          <label>Can I recycle </label>
           <input type="text" class="form-control" id="searchbox" placeholder="cardboard">
-          <button id="search" class="btn btn-sm m-1" type="submit">Search</button>
+          <button id="search" class="btn btn-sm m-1" type="submit"><strong>?</strong></button>
 			</fieldset>
 			<fieldset>
         <p>Commonly searched for:</p>
-					<button class="btn btn-sm">Cardboard</button>
-					<button class="btn btn-sm">Paper Towels</button>
-					<button class="btn btn-sm">Batteries</button>
+					<button class="btn btn-sm">cardboard</button>
+					<button class="btn btn-sm">paper towels</button>
+					<button class="btn btn-sm">batteries</button>
 			</fieldset>
     </form>
 	</header>
-	<main>
-		<section>
-			<h2>Results</h2>
-		</section>
-
-		<section class="card-deck">
+	<main class="p-2">
 		<!--results here-->
-		<div class="card"> <!--example card-->
-			<img class="card-img-top p-2" src="images/cardboard.jpg">
-			<div class="card-body">
-				<h3 class="card-title">Cardboard</h3>
-				<p class="card-text">Cardboard is recyclable!</p>
-			</div>
-		</div>
-
-		<div class="card"> <!--example card-->
-			<img class="card-img-top p-2" src="img.png">
-			<div class="card-body">
-				<h3 class="card-title">Cardboard</h3>
-				<p class="card-text">Cardboard is recyclable!</p>
-			</div>
-		</div>
-
-		<div class="card"> <!--example card-->
-			<img class="card-img-top p-2" src="img.png">
-			<div class="card-body">
-				<h3 class="card-title">Cardboard</h3>
-				<p class="card-text">Cardboard is recyclable!</p>
-			</div>
-		</div>
-
-		</section>
+		<article>
+			<img src="images/cardboard.jpg" width="100px" height="100px">
+			<div class="info">
+			<h3>[Title]</h3>
+			<p>[Description for the card goes here. It might be a couple of sentences.]</p>
+			<div>
+		</article>
 	</main>
 
 </body>
